@@ -1,17 +1,21 @@
 {
-    "version": 2,
-    "routes": [
-      {
-        "src": "/fetch-url",
-        "methods": ["GET"],
-        "dest": "index.js"
-      }
-    ],
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "routes": [
+    {
+      "src": "/fetch-url",
+      "methods": ["GET"],
+      "dest": "index.js"
+    },
+    {
+      "src": "/fetch-facebookads-data",
+      "methods": ["GET"],
+      "dest": "index.js"
+    }
+  ],
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ]
+}
